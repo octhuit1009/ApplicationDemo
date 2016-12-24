@@ -3,4 +3,8 @@
     <string name="email">email</string>
     <string name="password">password</string>
     <string name="login">login</string>
+    <string name="homeactivity">HomeActivity...</string>
+    <string name="height">hegiht(m)</string>
+    <string name="weight">weight(kg)</string>
+    <string name="compute">compute</string>
 </resources>
