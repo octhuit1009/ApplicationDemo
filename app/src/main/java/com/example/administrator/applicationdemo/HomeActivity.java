@@ -26,8 +26,8 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void refreshViews() {
-        double heightDouble = getIntent().getDoubleExtra("height", 0D);
-        double weightDouble = getIntent().getDoubleExtra("weight", 0D);
+        double heightDouble = getIntent().getDoubleExtra("height", 0);
+        double weightDouble = getIntent().getDoubleExtra("weight", 0);
 
         double bmiDouble = weightDouble / heightDouble / heightDouble;
         bmi.setText("BMI: " + bmiDouble);

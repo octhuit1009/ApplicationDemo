@@ -7,4 +7,7 @@
     <string name="height">hegiht(m)</string>
     <string name="weight">weight(kg)</string>
     <string name="compute">compute</string>
+    <string name="linear_layout">linear layout</string>
+    <string name="linear_layout_text">linear layout...</string>
+    <string name="linear_button1">button...</string>
 </resources>
