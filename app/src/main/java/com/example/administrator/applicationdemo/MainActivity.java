@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button compute;
     private Button linearLayout;
     private Button relativeLayout;
+    private Button views;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         compute.setOnClickListener(this);
         linearLayout.setOnClickListener(this);
         relativeLayout.setOnClickListener(this);
+        views.setOnClickListener(this);
     }
 
     private void setViews() {
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         compute = (Button) findViewById(R.id.compute);
         linearLayout = (Button) findViewById(R.id.linearLayout);
         relativeLayout = (Button) findViewById(R.id.relativeLayout);
+        views = (Button) findViewById(R.id.views);
     }
 
     @Override
@@ -60,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.relativeLayout:
                 startActivity(new Intent(this, RelativeLayoutActivity.class));
+                break;
+            case R.id.views:
+                startActivity(new Intent(this, ViewsActivity.class));
                 break;
             default:
                 break;

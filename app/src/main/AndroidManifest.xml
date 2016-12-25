@@ -18,6 +18,7 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".LinearLayoutActivity" />
         <activity android:name=".RelativeLayoutActivity" />
+        <activity android:name=".ViewsActivity" />
     </application>
 
 </manifest>
