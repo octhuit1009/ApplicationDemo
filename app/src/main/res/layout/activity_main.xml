@@ -40,4 +40,11 @@
         android:layout_below="@id/compute"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/relativeLayout"
+        android:text="@string/relative_layout"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText weight;
     private Button compute;
     private Button linearLayout;
+    private Button relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setListeners() {
         compute.setOnClickListener(this);
         linearLayout.setOnClickListener(this);
+        relativeLayout.setOnClickListener(this);
     }
 
     private void setViews() {
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         weight = (EditText) findViewById(R.id.weight);
         compute = (Button) findViewById(R.id.compute);
         linearLayout = (Button) findViewById(R.id.linearLayout);
+        relativeLayout = (Button) findViewById(R.id.relativeLayout);
     }
 
     @Override
@@ -54,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.linearLayout:
                 startActivity(new Intent(this, LinearLayoutActivity.class));
+                break;
+            case R.id.relativeLayout:
+                startActivity(new Intent(this, RelativeLayoutActivity.class));
                 break;
             default:
                 break;
